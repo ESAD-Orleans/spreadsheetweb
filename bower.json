@@ -1,0 +1,21 @@
+{
+  "name": "spreadsheetweb",
+  "version": "0.0.0",
+  "authors": [
+    "avioly@esad-orleans.fr"
+  ],
+  "description": "spreadsheet (csv) to web (html)",
+  "main": "convert.js",
+  "keywords": [
+    "csv"
+  ],
+  "license": "Art Libre",
+  "homepage": "http://esad-orleans.fr",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
