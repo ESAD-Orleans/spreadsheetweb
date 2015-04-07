@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="fr">
+	<meta charset="UTF-8">
+	<title>Spreadsheet Web</title>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/underscore/underscore-min.js"></script>
+	<script src="bower_components/papaparse/papaparse.min.js"></script>
+	<script src="convert.js"></script>
+	<link rel="stylesheet" href="reset.css"/>
+	<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<script id="template" language="html+js">
+	<table>
+		<% rows.each(function(cells){ %>
+		<tr>
+			<% cells.each(function(cell,index){ if(cols[index].empty){return} %>
+			<td <%= cell.format('class') %> <%= cell.format('width') %>><%= cell %></td>
+			<% }) %>
+		</tr>
+		<% }) %>
+	</table>
+</script>
+<div id="main"></div>
+</body>
+</html>

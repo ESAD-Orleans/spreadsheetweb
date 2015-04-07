@@ -1,7 +1,6 @@
-120;200;400;200;;;;
-double;entrée;pour;un tableau;;;;
+double [width:120];entrée [width:200];pour [width:400];un tableau [width:200];;;;
 deuxième;dimension;message;texte;;;;
-triple;[image:image.jpg];concept;croisement;;;;
+triple;[image:image.jpg];concept [class:concept];croisement;;;;
 ;;;;;;;
 ;;;;;;;
 ;;;;;;;
