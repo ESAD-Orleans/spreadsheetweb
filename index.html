@@ -3,15 +3,15 @@
 <head lang="fr">
 	<meta charset="UTF-8">
 	<title>Spreadsheet Web</title>
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/underscore/underscore-min.js"></script>
-	<script src="bower_components/papaparse/papaparse.min.js"></script>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/underscore/underscore.js"></script>
+	<script src="bower_components/papaparse/papaparse.js"></script>
 	<script src="convert.js"></script>
 	<link rel="stylesheet" href="reset.css"/>
 	<link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-<script id="template" language="html+js">
+<script id="template" language="html+js" data-file="Notes sur le graphisme actuel.csv">
 	<table>
 		<% rows.each(function(cells){ %>
 		<tr>

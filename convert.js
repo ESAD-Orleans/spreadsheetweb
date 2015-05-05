@@ -85,5 +85,6 @@ jQuery(document).ready(function($){
 		$('#main').html(template(spreadsheet));
 	}
 
-	$.ajax({url: 'sourcetest.csv'}).done(Convert);
+	var fileName = $('#template').data('file');
+	$.ajax({url: fileName}).done(Convert);
 });
